@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, #f7f7f7, #eaeaea);
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-image: url("25e77bd4-1a6a-4d36-9f63-6e465172e508.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    background-position: center; /* Centraliza a imagem */
+  }
+  
+  /* Header */
+  header {
+    background: rgb(250, 249, 251); /* Torna o fundo semi-transparente */
+    color: rgb(246, 245, 245);
+    text-align: center;
+    padding: 50px 20px;
+    background-color: transparent;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Main Content */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px);
+  }
+  
+  .content {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Fundo transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Button */
+  .btn {
+    display: inline-block;
+    background: #000000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #000000;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: fixed;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }

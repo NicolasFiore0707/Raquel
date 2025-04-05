@@ -1,0 +1,269 @@
+/* Resetando e normalizando estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-image: url("c21399a0-1e32-4636-bb81-36675283c93c.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+/* Cabeçalho */
+header {
+    background-color: #d5a002;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #e0b820;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: slideInLeft 1s ease;
+}
+
+/* Animação de deslizamento do título */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Seções */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section .content {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.section .content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #d5a002;
+    margin-bottom: 20px;
+    animation: fadeIn 1.2s ease;
+}
+
+/* Animação de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/* Botões e links */
+button, a {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    background: #d5a002;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, a:hover {
+    background: #f5e75c;
+    transform: translateY(-3px);
+}
+
+/* Rodapé */
+footer {
+    background: linear-gradient(to bottom, #e0cb91, #eadcb4);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+footer .social-icon {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social-icon:hover {
+    color: #ffd700;
+    transform: scale(1.2);
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Animação de entrada nas seções */
+.section {
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 80px 10px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .section .content {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 30px 10px;
+    }
+}
+
+.WhatsApp {
+    bottom: 250px; 
+    width: 30px;
+    height: 90px;   
+    right: 90px ;
+    left: 90px;
+    transition: transform 0.4s ease;
+    margin-top: 20px; 
+    position: fixed;
+}   
+
+a.whats {
+    bottom: 30px;  
+    width: 30px;
+    height: 90px;   
+    right: 90px ;
+    left: 90px;
+    transition: transform 0.4s ease;
+    margin-top: 20px; 
+    position: fixed;
+}
