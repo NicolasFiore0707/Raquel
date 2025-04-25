@@ -13,7 +13,8 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-image: url("c21399a0-1e32-4636-bb81-36675283c93c.jpeg");
+    background-image: url("imagens/inicial2.jpg");
+    background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
   
@@ -87,6 +88,9 @@ nav ul li a:hover {
     color: #ffd700;
     transform: scale(1.1);
 }
+
+
+
 
 /* Seções */
 .section {

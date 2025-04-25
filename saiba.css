@@ -12,14 +12,16 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
     background: linear-gradient(to bottom, #fff5f0, #fdd5c8);
-    background-image: url("83ca9140-beea-4ef2-b392-d87062737f26.jpeg");
+    background-image: url("imagens/saiba.jpg");
     background-position:center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   /* Cabeçalho */
   header {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(7, 7, 7, 0.7);
     color: rgb(0, 0, 0);
     padding: 20px 0;
     position: fixed;
